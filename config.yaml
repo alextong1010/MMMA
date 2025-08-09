@@ -1,0 +1,6 @@
+dataset_name: MathVista
+subset: testmini
+n_samples: 5
+
+seed: 42
+dataset_dir: /n/netscratch/ydu_lab/Lab/alex/
