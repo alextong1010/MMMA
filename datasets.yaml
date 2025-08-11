@@ -1,7 +1,7 @@
 datasets:
   MathVista:
     path: AI4Math/MathVista
-    subsets:
+    splits:
       - testmini # using this (1,000 examples)
       - test # 5,141 examples for standard evaluation
 

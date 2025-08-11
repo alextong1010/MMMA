@@ -1,6 +1,7 @@
 dataset_name: MathVista
-subset: testmini
+split: testmini
 n_samples: 5
+model: gemma-3-4b-it
 
 seed: 42
-dataset_dir: /n/netscratch/ydu_lab/Lab/alex/
+local_dataset_dir: /n/netscratch/ydu_lab/Lab/alex/ # where dataset (if parts of the dataset are stored locally) is stored locally
