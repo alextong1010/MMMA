@@ -4,8 +4,11 @@ Multimodal-multiagent
 Setup
 1. conda create -n MMMA python=3.10 
 2. pip install numpy
-3. pip install google-genai
-4. pip install datasets
+3. pip install datasets
+4. pip install google-genai
+5. pip install python-dotenv
+6. pip install pyyaml
+7. pip install tqdm
 
 Running:
 (Note: Works for the MathVista Dataset)
