@@ -6,14 +6,6 @@ from google import genai
 from dotenv import load_dotenv
 load_dotenv()
 
-def load_dataset(dataset_path, split):
-    if dataset_path == 'AI4Math/MathVista' and split == 'testmini':
-        with open("MathVista/testmini/generated_prompts/prompts_MathVista_testmini.json", 'r') as f:
-            prompts = json.load(f)
-        return prompts
-    else:
-        return load_dataset(dataset_path)[split]
-
 def load_client(model_name):
     if "gemma" in model_name or "gemini" in model_name:
         return genai.Client(api_key=os.getenv("GOOGLE_API_KEY"))

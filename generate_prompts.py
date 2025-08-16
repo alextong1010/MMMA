@@ -2,7 +2,7 @@ import argparse
 import json
 import os
 import yaml
-from datasets import load_dataset as hf_load_dataset
+from datasets import load_dataset
 from utils import *
 from tqdm import tqdm
 
@@ -18,7 +18,7 @@ def main(config_path):
     # Load dataset
     print("Loading dataset...")
     current_dir = os.getcwd()
-    dataset = hf_load_dataset(dataset_path)
+    dataset = load_dataset(dataset_path)
 
     local_dataset_path = os.path.join(local_dataset_dir, dataset_name)
 
